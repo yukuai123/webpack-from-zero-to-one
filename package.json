@@ -1,0 +1,19 @@
+{
+  "name": "webpack-from-zero-to-one",
+  "version": "1.0.0",
+  "description": "front-end engineering capabilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukuai123/webpack-from-zero-to-one.git"
+  },
+  "author": "yuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yukuai123/webpack-from-zero-to-one/issues"
+  },
+  "homepage": "https://github.com/yukuai123/webpack-from-zero-to-one#readme"
+}
