@@ -2,6 +2,7 @@
 const isDev = process.env.NODE_ENV !== 'prod';
 
 const dirs = require("./dirs");
+const cssModule = require("./style");
 
 const rules = [
   {
@@ -16,13 +17,8 @@ const rules = [
           compact: !isDev,
         },
       },
+      "ts-loader"
     ],
-  },
-  {
-    test: /\.(ts|tsx)$/,
-    include: dirs.src,
-    exclude: /node-modules/,
-    use: ["babel-loader", "ts-loader"],
   },
   {
     test: /\.(png|jpe?g|gif|svg)(\?.*)?/, // 图片处理
@@ -55,5 +51,5 @@ const rules = [
 
 module.exports = {
   strictExportPresence: true,
-  rules,
+  rules: rules.concat(cssModule),
 };

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "types": ["node", "react", "react-dom"],  /// 指定引入的类型声明文件，默认是自动引入所有声明文件，一旦指定该选项，则会禁用自动引入，改为只引入指定的类型声明文件，如果指定空数组[]则不引用任何文件
+    "allowSyntheticDefaultImports": true, // 是否允许从没有默认导出的模块中默认导入
+    "experimentalDecorators": true, // 是否启用实验性的装饰器特性
+    "removeComments": true,  // 是否将编译后的文件中的注释删掉
+    "noImplicitAny": false, // 如果我们没有为一些值设置明确的类型，编译器会默认认为这个值为any类型
+    "baseUrl": ".", // baseUrl用于设置解析非相对模块名称的基本目录，相对模块不会受baseUrl的影响
+    "jsx": "react", // 指定jsx代码用于的开发环境: 'preserve', 'react-native', or 'react'
+    "allowJs": true, // 是否允许编译JS文件
+    "paths": { // 模块名到基于baseUrl的路径映射
+      "*": ["node_modules/*", "src/types/*"],
+      "~/*": ["src/*"]
+    }
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "transpileOnly": true 
+  },
+  "compileOnSave": true, // 在我们编辑了项目中文件保存的时候，编辑器会根据tsconfig.json的配置重新生成文件，不过这个要编辑器支持
+  "include": ["src/**/*"], // 指定要编译的路径列表，但是和files的区别在于，这里的路径可以是文件夹，也可以是文件，可以使用相对和绝对路径，而且可以使用通配符，比如"./src"即表示要编译src文件夹下的所有文件以及子文件夹的文件。
+  "exclude": ["config", "public", "node_modules", "dist", "scripts"] // 不需要编译的文件目录
+}

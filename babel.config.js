@@ -3,7 +3,7 @@ module.exports = {
     [
       "@babel/preset-env",
       {
-        useBuiltIns: "usage",
+        useBuiltIns: "usage", // 会根据配置的浏览器兼容，以及你代码中用到的 API 来进行 polyfill，实现了按需添加。
         corejs: { version: 3, proposals: true },
       },
     ],
