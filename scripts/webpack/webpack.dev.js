@@ -20,7 +20,7 @@ module.exports = {
 
   devServer: {
     //启动服务器端口
-    port: 8080,
+    port: 8500,
     //默认是localhost，只能本地访问
     host: "0.0.0.0",
     //自动打开浏览器
@@ -30,7 +30,8 @@ module.exports = {
     //启用gzip压缩
     compress: true,
     // 告诉开发服务器禁止显示诸如 Webpack 捆绑包信息之类的消息。 错误和警告仍将显示。
-    noInfo: true,
+    // noInfo: true,
+    quiet: true,
     // 出现编译器错误或警告时，在浏览器中显示全屏覆盖。 如果只想显示编译器错误：
     overlay: true,
     // 当使用 HTML5 History API 时, 所有的 404 请求都会响应 index.html 的内容

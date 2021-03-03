@@ -17,7 +17,7 @@ const rules = [
           compact: !isDev,
         },
       },
-      "ts-loader"
+      // "ts-loader" 添加ts loader 会导致一旦出现typescript语法类型错误 则编译报错
     ],
   },
   {
