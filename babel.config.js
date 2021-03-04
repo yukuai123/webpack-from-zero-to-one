@@ -40,7 +40,6 @@ module.exports = {
     "@babel/plugin-syntax-dynamic-import",
     // 解析 es6解构 语法
     "@babel/plugin-proposal-object-rest-spread",
-    // 
-    // "@babel/plugin-proposal-nullish-coalescing-operator",
+    "@babel/plugin-proposal-nullish-coalescing-operator",
   ],
 };

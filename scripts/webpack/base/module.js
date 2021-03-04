@@ -1,5 +1,5 @@
 // 生产 与 开发环境的modules
-const isDev = process.env.NODE_ENV !== 'prod';
+const isDev = process.env.CURRENT_ENV !== 'prod';
 
 const dirs = require("./dirs");
 const cssModule = require("./style");

@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const isDev = process.env.NODE_ENV !== 'prod';
+const isDev = process.env.CURRENT_ENV !== 'prod';
 const loader = isDev ? 'style-loader' : MiniCssExtractPlugin.loader;
 
 module.exports = [

@@ -13,7 +13,9 @@ const dirs = {
   // modules
   modules: path.resolve(root, './node_modules'),
   // src/pages
-  pages: path.resolve(root, './src/pages')
+  pages: path.resolve(root, './src/pages'),
+  // package.json
+  package: path.resolve(root, './package.json')
 };
 
 module.exports = dirs;
